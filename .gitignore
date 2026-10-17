@@ -1,0 +1,10 @@
+# Keep this repository limited to the public demo presentation.
+*
+!/.gitignore
+!/README.md
+!/CHANGELOG.md
+!/logo.png
+!/.github/
+!/.github/ISSUE_TEMPLATE/
+!/.github/ISSUE_TEMPLATE/*.yml
+
