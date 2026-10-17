@@ -1,0 +1,48 @@
+name: Reportar un error
+description: Algo no funcionó como esperabas al probar la demo.
+title: "[Error] "
+body:
+  - type: input
+    id: version
+    attributes:
+      label: Versión que probaste
+      placeholder: "Ejemplo: pre-alpha 0.1"
+    validations:
+      required: true
+  - type: textarea
+    id: problema
+    attributes:
+      label: ¿Qué pasó?
+      description: Cuenta qué estabas haciendo y qué ocurrió.
+    validations:
+      required: true
+  - type: textarea
+    id: esperado
+    attributes:
+      label: ¿Qué esperabas que pasara?
+    validations:
+      required: true
+  - type: textarea
+    id: repetir
+    attributes:
+      label: ¿Cómo podemos repetirlo?
+      placeholder: |
+        1. Entré al juego...
+        2. Acepté el pedido...
+        3. Al recoger el producto...
+    validations:
+      required: false
+  - type: input
+    id: equipo
+    attributes:
+      label: Windows y equipo
+      description: Si lo sabes, indica tu versión de Windows, tarjeta gráfica y memoria RAM.
+    validations:
+      required: false
+  - type: textarea
+    id: captura
+    attributes:
+      label: Captura o vídeo
+      description: Puedes adjuntarlo aquí si ayuda a entender el problema.
+    validations:
+      required: false
