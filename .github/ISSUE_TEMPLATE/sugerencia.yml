@@ -1,0 +1,26 @@
+name: Dejar una sugerencia
+description: Cuéntame qué te gustó o qué cambiarías.
+title: "[Sugerencia] "
+body:
+  - type: input
+    id: version
+    attributes:
+      label: Versión que probaste
+      placeholder: "Ejemplo: pre-alpha 0.1"
+    validations:
+      required: true
+  - type: textarea
+    id: opinion
+    attributes:
+      label: ¿Cómo te fue jugando?
+      description: Qué te gustó, qué se sintió confuso o qué mejorarías.
+    validations:
+      required: true
+  - type: textarea
+    id: propuesta
+    attributes:
+      label: Tu idea
+      description: Si tienes una propuesta concreta, cuéntala aquí.
+    validations:
+      required: false
+
